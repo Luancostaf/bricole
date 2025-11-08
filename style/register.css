@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=Notable&family=Uncial+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(https://wallpapers.com/images/hd/1920x1080-hd-car-hhfcxte3nedpi6qc.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px; 
+    background-color: transparent;
+    position: relative;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Anta", sans-serif;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links a {
+    position: relative;
+    color: #FFFFFF;
+    font-family: 'Anta', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: #ffffff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+}
+
+
+.nav-links a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navbar-logo {
+    position: absolute; 
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.navbar-logo img {
+    height: 110px; 
+    width: auto;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px; /* Largura para acomodar 2 colunas */
+    /* Glassmorphism */
+    background: rgba(255, 255, 255, .1);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4);
+    backdrop-filter: blur(25px); 
+    border-radius: 10px;
+    color: #fff;
+    padding: 40px 50px;
+}
+
+/* Título */
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Neuton', serif; /* Usa a fonte serifada do seu import */
+    font-weight: 700;
+}
+
+/* Contêiner de Duas Colunas (Flexbox) */
+.wrapper .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: 20px;
+}
+
+/* Cada Campo (Define a Coluna) */
+.input-box .input-field {
+    position: relative;
+    width: 48%; /* Duas colunas com espaçamento */
+    height: 50px;
+    margin: 15px 0;
+}
+
+/* O Input em si (Preenche 100% da Coluna) */
+.input-box .input-field input {
+    width: 80%;
+    height: 100%;
+    
+    /* Estilo do Input */
+    background: rgba(255, 255, 255, 0.1); 
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #484848;
+    padding: 0 15px 0 40px; /* Espaço para o ícone */
+}
+
+.input-box .input-field input::placeholder {
+    color: #fff;
+}
+
+/* Ícone Boxicons (Posicionamento dentro do Input Field) */
+.input-box .input-field i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Checkbox (Declaração) */
+.declaration-label {
+    display: block; 
+    font-size: 14.5px;
+    margin: 10px 0 30px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.declaration-label input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+/* Botão de Registro */
+.wrapper .btn {
+    width: 100%; 
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+#polygon6{
+    position: fixed;
+    top: 80%;
+}

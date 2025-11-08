@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bricole - Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/style/register.css">
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <!-- Borders-Design -->
+            <div class="navbar-logo">
+                <img src="./assets/polygon-5.png" alt="Polígono de Canto">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Form-Register -->
+    <div class="wrapper">
+        <form action="">
+            <h1>Registration</h1>
+
+            <div class="input-box"> 
+                
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                
+                <div class="input-field">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+
+                <div class="input-field">
+                    <input type="email" placeholder="Email" required>
+                    <i class='bx bxs-envelope'></i>
+                </div>
+                
+                <div class="input-field">
+                    <input type="number" placeholder="Phone Number" required>
+                    <i class='bx bxs-phone'></i>
+                </div>
+                
+                <div class="input-field">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                
+                <div class="input-field">
+                    <input type="password" placeholder="Confirm Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                
+            </div> <label class="declaration-label">
+                <input type="checkbox">I hereby declare that the above information provided is true and correct
+            </label>
+
+            <button id="registerButton" type="submit" class="btn">Register</button>
+            
+        </form>
+    </div>
+    <!-- Borders-Design -->
+    <img id="polygon6" src="/assets/polygon-6.png" alt="">
+</body>
+    <script src="./scripts/register.js"></script>
+</html>
