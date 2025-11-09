@@ -1,35 +1,30 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    // =======================================================
-    // 1. OBJETO DE DADOS (BANCO DE DADOS DOS CARROS)
-    //    *** ATUALIZE COM AS INFORMAÇÕES E CAMINHOS DAS SUAS IMAGENS ***
-    // =======================================================
     const carData = {
         // CARRO 1: FERRARI SF90
         'sf90-vermelha': {
             title: 'FERRARI <span class="car-model-red">SF90</span>',
             images: [
-                '/assets/sf90-1.jpg',
-                '/assets/sf90-2.jpg',
-                '/assets/sf90-3.jpg',
-                '/assets/sf90-4.jpg',
-                '/assets/sf90-5.jpg',
-                '/assets/sf90-6.jpg',
-                '/assets/sf90-7.jpg',
-                '/assets/sf90-8.jpg',
-                '/assets/sf90-9.jpg',
-                '/assets/sf90-10.jpg',
-                '/assets/sf90-11.jpg',
-                '/assets/sf90-12.jpg',
-                '/assets/sf90-13.jpg',
-                '/assets/sf90-14.jpg',
-                '/assets/sf90-15.jpg',
-                '/assets/sf90-16.jpg',
-                '/assets/sf90-17.jpg',
-                '/assets/sf90-18.jpg',
-                '/assets/sf90-19.jpg',
-                '/assets/sf90-20.jpg'
+                'https://luancostaf.github.io/bricole/assets/sf90-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-3.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-4.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-5.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-6.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-7.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-8.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-9.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-10.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-11.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-12.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-13.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-14.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-15.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-16.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-17.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-18.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-19.jpg',
+                'https://luancostaf.github.io/bricole/assets/sf90-20.jpg'
             ], 
             details: {
                 cidade: 'Brasília - DF',
@@ -49,23 +44,23 @@ document.addEventListener('DOMContentLoaded', () => {
         'f8-tributo': {
             title: 'FERRARI <span class="car-model-red">F8-TRIBUTO</span>',
             images: [
-                '/assets/f8-1.jpg',
-                '/assets/f8-2.jpg',
-                '/assets/f8-3.jpg',
-                '/assets/f8-4.jpg',
-                '/assets/f8-5.jpg',
-                '/assets/f8-6.jpg',
-                '/assets/f8-7.jpg',
-                '/assets/f8-8.jpg',
-                '/assets/f8-9.jpg',
-                '/assets/f8-10.jpg',
-                '/assets/f8-11.jpg',
-                '/assets/f8-12.jpg',
-                '/assets/f8-13.jpg',
-                '/assets/f8-14.jpg',
-                '/assets/f8-15.jpg',
-                '/assets/f8-16.jpg',
-                '/assets/f8-17.jpg'
+                'https://luancostaf.github.io/bricole/assets/f8-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-3.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-4.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-5.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-6.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-7.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-8.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-9.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-10.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-11.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-12.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-13.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-14.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-15.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-16.jpg',
+                'https://luancostaf.github.io/bricole/assets/f8-17.jpg'
             ], 
             details: {
                 cidade: 'Belo Horizonte - MG',
@@ -85,14 +80,14 @@ document.addEventListener('DOMContentLoaded', () => {
         '296-GTB': {
             title: 'FERRARI <span class="car-model-red">296 GTB</span>',
             images: [
-                '/assets/gtb-1.jpg',
-                '/assets/gtb-2.jpg',
-                '/assets/gtb-3.jpg',
-                '/assets/gtb-4.jpg',
-                '/assets/gtb-5.jpg',
-                '/assets/gtb-6.jpg',
-                '/assets/gtb-7.jpg',
-                '/assets/gtb-8.jpg'
+                'https://luancostaf.github.io/bricole/assets/gtb-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-3.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-4.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-5.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-6.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-7.jpg',
+                'https://luancostaf.github.io/bricole/assets/gtb-8.jpg'
             ],
             details: {
                 cidade: 'Belo Horizonte - MG',
@@ -112,9 +107,9 @@ document.addEventListener('DOMContentLoaded', () => {
         '296-GTS': {
             title: 'FERRARI <span class="car-model-red">296 GTS</span>',
             images: [
-                '/assets/gts-1.jpg',
-                '/assets/gts-2.jpg',
-                '/assets/gts-3.jpg'
+                'https://luancostaf.github.io/bricole/assets/gts-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/gts-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/gts-3.jpg'
             ],
             details: {
                 cidade: 'Belo Horizonte - MG',
@@ -134,12 +129,12 @@ document.addEventListener('DOMContentLoaded', () => {
         '12-cilindri': {
             title: 'FERRARI <span class="car-model-red">12CILINDRI</span>',
             images: [
-                '/assets/12cilindri-1.jpg',
-                '/assets/12cilindri-2.jpg',
-                '/assets/12cilindri-3.jpg',
-                '/assets/12cilindri-4.jpg',
-                '/assets/12cilindri-5.jpg',
-                '/assets/12cilindri-6.jpg'
+                'https://luancostaf.github.io/bricole/assets/12cilindri-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/12cilindri-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/12cilindri-3.jpg',
+                'https://luancostaf.github.io/bricole/assets/12cilindri-4.jpg',
+                'https://luancostaf.github.io/bricole/assets/12cilindri-5.jpg',
+                'https://luancostaf.github.io/bricole/assets/12cilindri-6.jpg'
             ],
             details: {
                 cidade: 'Balneário Camboriú - SC',
@@ -159,26 +154,26 @@ document.addEventListener('DOMContentLoaded', () => {
         'Purosangue': {
             title: 'FERRARI <span class="car-model-red">PUROSANGUE</span>',
             images: [
-                '/assets/purosangue-1.jpg',
-                '/assets/purosangue-2.jpg',
-                '/assets/purosangue-3.jpg',
-                '/assets/purosangue-4.jpg',
-                '/assets/purosangue-5.jpg',
-                '/assets/purosangue-6.jpg',
-                '/assets/purosangue-7.jpg',
-                '/assets/purosangue-8.jpg',
-                '/assets/purosangue-9.jpg',
-                '/assets/purosangue-10.jpg',
-                '/assets/purosangue-11.jpg',
-                '/assets/purosangue-12.jpg',
-                '/assets/purosangue-13.jpg',
-                '/assets/purosangue-14.jpg',
-                '/assets/purosangue-15.jpg',
-                '/assets/purosangue-16.jpg',
-                '/assets/purosangue-17.jpg',
-                '/assets/purosangue-18.jpg',
-                '/assets/purosangue-19.jpg',
-                '/assets/purosangue-20.jpg'
+                'https://luancostaf.github.io/bricole/assets/purosangue-1.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-2.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-3.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-4.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-5.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-6.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-7.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-8.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-9.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-10.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-11.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-12.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-13.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-14.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-15.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-16.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-17.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-18.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-19.jpg',
+                'https://luancostaf.github.io/bricole/assets/purosangue-20.jpg'
             ],
             details: {
                 cidade: 'Belo Horizonte - MG',
@@ -196,9 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // ADICIONE OUTROS CARROS AQUI...
     };
 
-    // =======================================================
     // 2. SELETORES DE ELEMENTOS
-    // =======================================================
     const modal = document.getElementById('car-modal');
     const closeButton = document.querySelector('.close-button');
     const discoverButtons = document.querySelectorAll('.discover-button');
@@ -215,11 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentSlide = 0;
     let totalSlides = 0; // Será atualizado dinamicamente
-
-    // =======================================================
+    
     // 3. LÓGICA DO CARROSSEL
-    // =======================================================
-
     const moveCarousel = () => {
         // Garante que slides existam para evitar erros
         const slides = document.querySelectorAll('.carousel-slide');
@@ -252,10 +242,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // =======================================================
     // 4. LÓGICA DE CARREGAMENTO DO MODAL
-    // =======================================================
-
     const loadCarContent = (carId) => {
         const car = carData[carId];
         if (!car) {
@@ -307,10 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
         modal.style.display = 'block';
     };
 
-    // =======================================================
     // 5. EVENTOS: ABRIR E FECHAR
-    // =======================================================
-
     // Itera sobre todos os botões DISCOVER MORE e anexa o evento de clique
     discoverButtons.forEach(button => {
         button.addEventListener('click', (event) => {
