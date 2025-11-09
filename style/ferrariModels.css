@@ -9,7 +9,7 @@
 }
 
 body {
-    background: url(/assets/wallpaper-bricole-bricks.png);
+    background: url("https://luancostaf.github.io/bricole/assets/wallpaper-bricole-bricks.png");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
